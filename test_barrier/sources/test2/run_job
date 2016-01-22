@@ -1,0 +1,33 @@
+#!/bin/bash
+
+export USE_ETHER_SOCKETS=yes
+
+
+export LD_LIBRARY_PATH
+export MC_ROOT=/opt/srcci/comp54
+source $MC_ROOT/thisenv.sh
+export CARTE=/opt/srcci/comp54
+
+export LIBRARY_PATH=/home/caliga/bin:/usr/bin:/usr/lib:/opt/intel/Compiler/11.1/046/lib:/home/caliga/lib:/opt/intel/Compiler/11.1/046/lib/ia32:/opt/srcci/comp54/lib/libmap/libdebug
+
+export LD_LIBRARY_PATH=/home/caliga/bin:/usr/bin:/usr/lib:/opt/intel/Compiler/11.1/046/lib:/home/caliga/lib:/opt/intel/Compiler/11.1/046/lib/ia32
+env
+
+#export LD_LIBRARY_PATH=/home/caliga/bin:/usr/bin:/usr/lib:/opt/intel/Compiler/11.1/046/lib:/home/caliga/lib:/opt/intel/Compiler/11.1/046/lib/ia32:/net/forbin65.srccomp.com/dvl/builds/installs/141031-1232/opt/srcci/comp/lib:/net/forbin65.srccomp.com/dvl/builds/installs/141031-1232/opt/srcci/comp/lib/shared:/net/forbin65.srccomp.com/dvl/builds/installs/141031-1232/opt/srcci/comp/lib/sim:/net/forbin65.srccomp.com/dvl/builds/installs/141031-1232/opt/srcci/comp/lib/libmap/libdebug
+
+
+export SNAP_NETWORK_ADDRESS=192.168.0.10
+
+#export SNAP_NETWORK_ADDRESS=10.0.0.28
+
+export SNAP_DEBUG=xfer
+export ETH_HOST_PORT_0=11211
+
+export MAPTRACEMASK=0x8000
+
+export MAPTARGET=map_m
+
+#env | grep LD_LIBRARY
+
+
+./ex21 20 4
